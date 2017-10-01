@@ -104,7 +104,7 @@ Su definición consta de la estructura interna del tipo, más una referencia. Cu
 - pointers
 - functions
 
-## Paradigma
+## Interfaces
 
 Definitivamente Go **no** es un lenguaje orientado a objetos. 
 
@@ -140,6 +140,8 @@ func printGreeting(b bot) {
 ```
 
 El comportamiento del código anterior es similar a cuando en POO dos clases _implementan_ una funcionalidad encerrada en una **interfaz**.
+
+En Go muchas de las funciones de las librerias estándar utilizan interfaces tales como _Reader_ y _Writer_ para mantener el código limpio y sencillo a la hora de transferir datos entre extremos de comunicación, tales como respuestas de servidores http, contenidos de archivos en el filesystem, la terminal, etc...
 
 ## Misc
 
